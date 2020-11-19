@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    This will cover the one of purchase of single or multiple products
-Library    SeleniumLibrary
+Library    SeleniumLibrary  Excellib
+
 
 
 *** Variables ***
@@ -11,12 +12,7 @@ ${Confirmed_Order_Continue_Shopping} =      xpath=/html/body/main/div/div[1]/div
 
 
 *** Test Cases ***
-Common Actions
-    [Documentation]    All common Actions across the website
-    [Tags]    Reg
-    Access TBD Home Page
-    Continue Shopping
-    Close TBD website
+
 
 *** Keywords ***
 Access TBD Home Page

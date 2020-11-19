@@ -1,7 +1,8 @@
 *** Settings ***
 Documentation    This PO file will cover keywords for the home page
 Library    SeleniumLibrary
-Resource    /PycharmProjects/pythonProject/TBC/venv/Resources/Common.robot
+Resource    ../Resources/Common.robot
+
 
 
 *** Variables ***

@@ -1,11 +1,14 @@
 *** Settings ***
 Documentation    This common file will cover all the common actions taken on the website
 Library    SeleniumLibrary  Excellib
+Resource    ../Resources/Common.robot
+Resource    ../Resources/PageObjects/ChooseProductType.robot
+
+
+
 
 
 *** Variables ***
-${Start_URL} =    https://thebutchersdog.oxdigital.com.au
-${Browser} =    firefox
 ${Home_Products_Menu} =  xpath=//*[@id="cus-nav"]
 ${Home_Product_Combo_Box} =  xpath=//*[@id="cus-show"]/div/a[1]/div[1]
 ${Combo_Boxes_Carnivore_Box} =  xpath=/html/body/section[5]/div/div[2]/div[3]/div/div/div/div/a
@@ -55,8 +58,9 @@ ${Confirmed_Order_Continue_Shopping} =      xpath=/html/body/main/div/div[1]/div
 User can successfully complete purchase of a one off
     [Documentation]    One off purchase of single or multiple products
     [Tags]    Reg
-    Access TBD Home Page
-    Click on Product Menu
+    Common.Access TBD Home Page
+    ComboBoxes.Click On Product Menu
+
     Choose Product Type
     Add product to cart
     Checkout Product
@@ -65,18 +69,14 @@ User can successfully complete purchase of a one off
     Enter Credit Card Details
     Submit Final Order Details
     Verify Order Confirmation Page
-    Continue Shopping
-    Close TBD website
+    Common.Continue Shopping
+    Common.Close TBD Website
 
 
 
 
 
 *** Keywords ***
-Access TBD Home Page
-    Open Browser    ${Start_URL}    ${Browser}
-    Maximize Browser Window
-    Sleep    3s
 Click on Product Menu
     Click Element    ${Home_Products_Menu}
     Sleep    1s
@@ -149,10 +149,9 @@ Verify Order Confirmation Page
     Sleep    1s
     Element Should Be Visible    ${Confirmed_Order_Customer_Info_Section}   Customer Information Section Confirmed
     Sleep    1s
-Continue Shopping
-    Click Element    ${Confirmed_Order_Continue_Shopping}
-    Sleep    2s
-Close TBD website
-    Close Browser
+
+
+
+
 
 
