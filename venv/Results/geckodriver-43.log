@@ -1,0 +1,15 @@
+1605691700136	geckodriver	INFO	Listening on 127.0.0.1:57061
+1605691700160	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelYicI8"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605691710085	Marionette	INFO	Listening on port 38043
+1605691710223	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/, line 1954: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/product/combo-boxes/carnivore-box/, line 1972: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+JavaScript error: , line 0: uncaught exception: undefined
+1605692123671	Marionette	INFO	Stopped listening on port 38043

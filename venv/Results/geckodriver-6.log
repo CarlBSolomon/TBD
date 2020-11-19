@@ -1,0 +1,18 @@
+1605287761999	geckodriver	INFO	Listening on 127.0.0.1:60571
+1605287763023	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUZy4lg"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605287772499	Marionette	INFO	Listening on port 44119
+1605287772667	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/, line 1931: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/product/combo-boxes/carnivore-box/, line 1951: TypeError: jQuery(...).select2 is not a function
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1605288099240	Marionette	INFO	Stopped listening on port 44119

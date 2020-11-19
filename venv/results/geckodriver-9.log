@@ -1,0 +1,13 @@
+1605180409736	geckodriver	INFO	Listening on 127.0.0.1:48711
+1605180409776	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuuqxWz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605180422248	Marionette	INFO	Listening on port 39219
+1605180422365	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/, line 1902: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+JavaScript error: resource://devtools/client/jsonview/Sniffer.jsm, line 56: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.jsm, line 56: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+1605190533796	Marionette	INFO	Stopped listening on port 39219

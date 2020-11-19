@@ -1,0 +1,18 @@
+1605620719873	geckodriver	INFO	Listening on 127.0.0.1:43393
+1605620719900	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeaKYcj"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605620729148	Marionette	INFO	Listening on port 45403
+1605620729469	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/, line 1952: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/themes/Blutcher/assets/js/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://thebutchersdog.com.au/product/combo-boxes/carnivore-box/, line 1972: TypeError: jQuery(...).select2 is not a function
+JavaScript error: https://thebutchersdog.com.au/wp-content/plugins/woocommerce-pincode-check-pro-unl-num/assets/js/custom.min.js?ver=1, line 1363: TypeError: jQuery(...).select2 is not a function
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://thebutchersdog.com.au"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://thebutchersdog.com.au"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://thebutchersdog.com.au"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://thebutchersdog.com.au"
+1605635750906	Marionette	INFO	Stopped listening on port 45403

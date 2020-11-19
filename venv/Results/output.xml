@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on linux)" generated="20201118 14:02:17.376" rpa="false">
+<suite id="s1" name="OneOffPurchase" source="/home/maverickcbs/PycharmProjects/pythonProject/TBD/venv/Tests/OneOffPurchase.robot">
+<test id="s1-t1" name="User can successfully complete purchase of a one off">
+<kw name="Access TBD Home Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Start_URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20201118 14:02:17.844" level="INFO">Opening browser 'firefox' to base url 'https://thebutchersdog.oxdigital.com.au'.</msg>
+<msg timestamp="20201118 14:02:17.848" level="INFO">Firefox driver log is always forced to to: /home/maverickcbs/PycharmProjects/pythonProject/TBD/venv/Results/geckodriver-71.log</msg>
+<status status="PASS" starttime="20201118 14:02:17.843" endtime="20201118 14:02:36.234"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201118 14:02:36.236" endtime="20201118 14:02:36.277"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201118 14:02:39.280" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201118 14:02:36.277" endtime="20201118 14:02:39.281"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:02:17.842" endtime="20201118 14:02:39.283"></status>
+</kw>
+<kw name="Click on Product Menu">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Home_Products_Menu}</arg>
+</arguments>
+<msg timestamp="20201118 14:02:39.288" level="INFO">Clicking element 'xpath=//*[@id="cus-nav"]'.</msg>
+<status status="PASS" starttime="20201118 14:02:39.287" endtime="20201118 14:02:39.502"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201118 14:02:40.504" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201118 14:02:39.502" endtime="20201118 14:02:40.505"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:02:39.285" endtime="20201118 14:02:40.506"></status>
+</kw>
+<kw name="Choose Product Type">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Home_Product_Combo_Box}</arg>
+</arguments>
+<msg timestamp="20201118 14:02:40.509" level="INFO">Clicking element 'xpath=//*[@id="cus-show"]/div/a[1]/div[1]'.</msg>
+<status status="PASS" starttime="20201118 14:02:40.508" endtime="20201118 14:02:44.328"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201118 14:02:46.331" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201118 14:02:44.329" endtime="20201118 14:02:46.332"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:02:40.506" endtime="20201118 14:02:46.334"></status>
+</kw>
+<kw name="Add product to cart">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Combo_Boxes_Carnivore_Box}</arg>
+</arguments>
+<msg timestamp="20201118 14:02:46.338" level="INFO">Clicking element 'xpath=/html/body/section[5]/div/div[2]/div[3]/div/div/div/div/a'.</msg>
+<status status="PASS" starttime="20201118 14:02:46.337" endtime="20201118 14:02:51.237"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201118 14:02:53.239" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201118 14:02:51.237" endtime="20201118 14:02:53.240"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Combo_Boxes_Carnivore_Box_Pincode}</arg>
+<arg>${Postcode}</arg>
+</arguments>
+<msg timestamp="20201118 14:02:53.243" level="INFO">Typing text '2017' into text field 'id=pincode_field_id'.</msg>
+<status status="PASS" starttime="20201118 14:02:53.241" endtime="20201118 14:02:53.569"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201118 14:02:54.571" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201118 14:02:53.569" endtime="20201118 14:02:54.573"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Combo_Boxes_Carnivore_Box_Check_My_Postcode}</arg>
+</arguments>
+<msg timestamp="20201118 14:02:54.577" level="INFO">Clicking element 'id=checkpin'.</msg>
+<status status="PASS" starttime="20201118 14:02:54.574" endtime="20201118 14:02:55.150"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201118 14:02:56.154" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201118 14:02:55.151" endtime="20201118 14:02:56.155"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Combo_Boxes_Carnivore_Box_Add_To_Cart}</arg>
+</arguments>
+<msg timestamp="20201118 14:02:56.157" level="INFO">Clicking element 'class=single_add_to_cart_button'.</msg>
+<status status="PASS" starttime="20201118 14:02:56.155" endtime="20201118 14:02:56.624"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201118 14:02:59.626" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201118 14:02:56.625" endtime="20201118 14:02:59.627"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${Combo_Boxes_Carnivore_Box_Added_To_Cart}</arg>
+</arguments>
+<status status="PASS" starttime="20201118 14:02:59.629" endtime="20201118 14:02:59.720"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:00.723" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201118 14:02:59.721" endtime="20201118 14:03:00.724"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:02:46.335" endtime="20201118 14:03:00.726"></status>
+</kw>
+<kw name="Checkout Product">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Cart_Header}</arg>
+</arguments>
+<status status="PASS" starttime="20201118 14:03:00.730" endtime="20201118 14:03:00.823"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:02.824" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:00.823" endtime="20201118 14:03:02.825"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Cart_Checkout}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:02.826" level="INFO">Clicking element 'xpath=/html/body/div[10]/div/a/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20201118 14:03:02.825" endtime="20201118 14:03:09.259"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:12.260" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:09.259" endtime="20201118 14:03:12.261"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:03:00.728" endtime="20201118 14:03:12.262"></status>
+</kw>
+<kw name="Enter Shipping Details">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${Cart_Summary}</arg>
+</arguments>
+<status status="PASS" starttime="20201118 14:03:12.264" endtime="20201118 14:03:12.354"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:13.356" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201118 14:03:12.355" endtime="20201118 14:03:13.357"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email_address}</arg>
+<arg>${customer_email_id}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:13.362" level="INFO">Typing text 'carlsolomon81@gmail.com' into text field 'id=billing_email'.</msg>
+<status status="PASS" starttime="20201118 14:03:13.359" endtime="20201118 14:03:13.786"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:15.788" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:13.786" endtime="20201118 14:03:15.789"></status>
+</kw>
+<kw name="Unselect Checkbox" library="SeleniumLibrary">
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${Create_Account_Checkbox}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:15.792" level="INFO">Unselecting checkbox 'id=createaccount'.</msg>
+<status status="PASS" starttime="20201118 14:03:15.790" endtime="20201118 14:03:16.285"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Shipping_First_Name_Field}</arg>
+<arg>Carl</arg>
+</arguments>
+<msg timestamp="20201118 14:03:16.287" level="INFO">Typing text 'Carl' into text field 'id=shipping_first_name'.</msg>
+<status status="PASS" starttime="20201118 14:03:16.286" endtime="20201118 14:03:16.404"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Shipping_Surname_Field}</arg>
+<arg>Solomon</arg>
+</arguments>
+<msg timestamp="20201118 14:03:16.406" level="INFO">Typing text 'Solomon' into text field 'id=shipping_last_name'.</msg>
+<status status="PASS" starttime="20201118 14:03:16.405" endtime="20201118 14:03:16.592"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Shipping_Street_Address}</arg>
+<arg>3 Victoria Park Parade</arg>
+</arguments>
+<msg timestamp="20201118 14:03:16.594" level="INFO">Typing text '3 Victoria Park Parade' into text field 'id=shipping_address_1'.</msg>
+<status status="PASS" starttime="20201118 14:03:16.593" endtime="20201118 14:03:16.957"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Shipping_Apartment_Number}</arg>
+<arg>28</arg>
+</arguments>
+<msg timestamp="20201118 14:03:16.959" level="INFO">Typing text '28' into text field 'id=shipping_address_2'.</msg>
+<status status="PASS" starttime="20201118 14:03:16.958" endtime="20201118 14:03:17.049"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Shipping_Company_Name}</arg>
+<arg>Amazon</arg>
+</arguments>
+<msg timestamp="20201118 14:03:17.051" level="INFO">Typing text 'Amazon' into text field 'id=shipping_company'.</msg>
+<status status="PASS" starttime="20201118 14:03:17.049" endtime="20201118 14:03:17.196"></status>
+</kw>
+<kw name="List Selection Should Be" library="SeleniumLibrary">
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<arguments>
+<arg>${Shipping_Country}</arg>
+<arg>Australia</arg>
+</arguments>
+<msg timestamp="20201118 14:03:17.197" level="INFO">Verifying list 'id=shipping_country' has option [ Australia ] selected.</msg>
+<msg timestamp="20201118 14:03:17.271" level="INFO">Current page contains list 'id=shipping_country'.</msg>
+<status status="PASS" starttime="20201118 14:03:17.196" endtime="20201118 14:03:17.489"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Shipping_Pincode}</arg>
+<arg>2017</arg>
+</arguments>
+<msg timestamp="20201118 14:03:17.490" level="INFO">Typing text '2017' into text field 'id=shipping_postcode'.</msg>
+<status status="PASS" starttime="20201118 14:03:17.490" endtime="20201118 14:03:17.598"></status>
+</kw>
+<kw name="List Selection Should Be" library="SeleniumLibrary">
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<arguments>
+<arg>${Shipping_State}</arg>
+<arg>NSW</arg>
+</arguments>
+<msg timestamp="20201118 14:03:17.599" level="INFO">Verifying list 'id=shipping_state' has option [ NSW ] selected.</msg>
+<msg timestamp="20201118 14:03:17.648" level="INFO">Current page contains list 'id=shipping_state'.</msg>
+<status status="PASS" starttime="20201118 14:03:17.599" endtime="20201118 14:03:17.901"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Shipping_City}</arg>
+<arg>Sydney</arg>
+</arguments>
+<msg timestamp="20201118 14:03:17.902" level="INFO">Typing text 'Sydney' into text field 'id=shipping_city'.</msg>
+<status status="PASS" starttime="20201118 14:03:17.901" endtime="20201118 14:03:18.031"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Shipping_Phone}</arg>
+<arg>0410348495</arg>
+</arguments>
+<msg timestamp="20201118 14:03:18.033" level="INFO">Typing text '0410348495' into text field 'id=shipping_phone'.</msg>
+<status status="PASS" starttime="20201118 14:03:18.032" endtime="20201118 14:03:18.234"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:03:12.263" endtime="20201118 14:03:18.235"></status>
+</kw>
+<kw name="Choose Payment Type">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Payment_Button}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:18.242" level="INFO">Clicking element 'class=cfw-primary-btn.cfw-next-tab.cfw-continue-to-payment-btn'.</msg>
+<status status="PASS" starttime="20201118 14:03:18.239" endtime="20201118 14:03:18.630"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:21.631" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:18.630" endtime="20201118 14:03:21.632"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>payment_method</arg>
+<arg>stripe</arg>
+</arguments>
+<msg timestamp="20201118 14:03:21.633" level="INFO">Selecting 'stripe' from radio button 'payment_method'.</msg>
+<status status="PASS" starttime="20201118 14:03:21.632" endtime="20201118 14:03:22.082"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:25.084" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:22.083" endtime="20201118 14:03:25.085"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:03:18.236" endtime="20201118 14:03:25.087"></status>
+</kw>
+<kw name="Enter Credit Card Details">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${Stripe_CC_Frame}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:25.091" level="INFO">Selecting frame 'xpath=//*[@id="stripe-card-element"]/div/iframe'.</msg>
+<status status="PASS" starttime="20201118 14:03:25.091" endtime="20201118 14:03:25.134"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Credit_Card_Number}</arg>
+<arg>4242424242424242</arg>
+</arguments>
+<msg timestamp="20201118 14:03:25.136" level="INFO">Typing text '4242424242424242' into text field 'xpath=//*[@id="root"]/form/span[2]/div/div[2]/span/input'.</msg>
+<status status="PASS" starttime="20201118 14:03:25.135" endtime="20201118 14:03:25.530"></status>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20201118 14:03:25.531" endtime="20201118 14:03:25.632"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${Stripe_Exp_Frame}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:25.633" level="INFO">Selecting frame 'xpath=//*[@id="stripe-exp-element"]/div/iframe'.</msg>
+<status status="PASS" starttime="20201118 14:03:25.632" endtime="20201118 14:03:26.032"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Credit_Card_Expiry}</arg>
+<arg>08/22</arg>
+</arguments>
+<msg timestamp="20201118 14:03:26.033" level="INFO">Typing text '08/22' into text field 'xpath=//*[@id="root"]/form/span[2]/span/input'.</msg>
+<status status="PASS" starttime="20201118 14:03:26.032" endtime="20201118 14:03:26.201"></status>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20201118 14:03:26.202" endtime="20201118 14:03:26.256"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${Stripe_CVC_Frame}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:26.258" level="INFO">Selecting frame 'xpath=//*[@id="stripe-cvc-element"]/div/iframe'.</msg>
+<status status="PASS" starttime="20201118 14:03:26.256" endtime="20201118 14:03:26.341"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Credit_Card_CVV}</arg>
+<arg>610</arg>
+</arguments>
+<msg timestamp="20201118 14:03:26.343" level="INFO">Typing text '610' into text field 'xpath=//*[@id="root"]/form/span[2]/span/input'.</msg>
+<status status="PASS" starttime="20201118 14:03:26.342" endtime="20201118 14:03:26.464"></status>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20201118 14:03:26.464" endtime="20201118 14:03:26.498"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:28.500" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:26.499" endtime="20201118 14:03:28.501"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:03:25.089" endtime="20201118 14:03:28.503"></status>
+</kw>
+<kw name="Submit Final Order Details">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Order_Comments}</arg>
+<arg>Testing For Combo Box</arg>
+</arguments>
+<msg timestamp="20201118 14:03:28.507" level="INFO">Typing text 'Testing For Combo Box' into text field 'id=order_comments'.</msg>
+<status status="PASS" starttime="20201118 14:03:28.507" endtime="20201118 14:03:28.859"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:30.861" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:28.859" endtime="20201118 14:03:30.862"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${Terms_Condtns_Checkbox}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:30.866" level="INFO">Selecting checkbox 'id=terms'.</msg>
+<status status="PASS" starttime="20201118 14:03:30.864" endtime="20201118 14:03:31.253"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:36.255" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:31.254" endtime="20201118 14:03:36.256"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Complete_Order}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:36.260" level="INFO">Clicking element 'xpath=/html/body/main/form/div[1]/div[3]/div[8]/div[2]/button'.</msg>
+<status status="PASS" starttime="20201118 14:03:36.258" endtime="20201118 14:03:37.537"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:42.539" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:37.537" endtime="20201118 14:03:42.540"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:03:28.505" endtime="20201118 14:03:42.541"></status>
+</kw>
+<kw name="Verify Order Confirmation Page">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${Confirmed_Order_Continue_Shopping}</arg>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20201118 14:03:42.544" endtime="20201118 14:03:51.446"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${Confirmed_Order_Success_Tick}</arg>
+<arg>Order Tick Confirmed</arg>
+</arguments>
+<msg timestamp="20201118 14:03:52.183" level="INFO">Element 'class=cfw-checkmark' is displayed.</msg>
+<status status="PASS" starttime="20201118 14:03:51.447" endtime="20201118 14:03:52.184"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:53.186" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201118 14:03:52.184" endtime="20201118 14:03:53.187"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${Confirmed_Order_Updates_Section}</arg>
+<arg>Updates Section Confirmed</arg>
+</arguments>
+<msg timestamp="20201118 14:03:53.283" level="INFO">Element 'class=cfw-order-updates' is displayed.</msg>
+<status status="PASS" starttime="20201118 14:03:53.188" endtime="20201118 14:03:53.283"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:54.285" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201118 14:03:53.284" endtime="20201118 14:03:54.286"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${Confirmed_Order_Customer_Info_Section}</arg>
+<arg>Customer Information Section Confirmed</arg>
+</arguments>
+<msg timestamp="20201118 14:03:54.515" level="INFO">Element 'class=cfw-customer-information' is displayed.</msg>
+<status status="PASS" starttime="20201118 14:03:54.286" endtime="20201118 14:03:54.517"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201118 14:03:55.519" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201118 14:03:54.518" endtime="20201118 14:03:55.520"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:03:42.543" endtime="20201118 14:03:55.521"></status>
+</kw>
+<kw name="Continue Shopping">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Confirmed_Order_Continue_Shopping}</arg>
+</arguments>
+<msg timestamp="20201118 14:03:55.526" level="INFO">Clicking element 'xpath=/html/body/main/div/div[1]/div[2]/a'.</msg>
+<status status="PASS" starttime="20201118 14:03:55.524" endtime="20201118 14:03:59.204"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201118 14:04:01.207" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201118 14:03:59.205" endtime="20201118 14:04:01.208"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:03:55.521" endtime="20201118 14:04:01.210"></status>
+</kw>
+<kw name="Close TBD website">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201118 14:04:01.214" endtime="20201118 14:04:02.834"></status>
+</kw>
+<status status="PASS" starttime="20201118 14:04:01.212" endtime="20201118 14:04:02.834"></status>
+</kw>
+<doc>One off purchase of single or multiple products</doc>
+<tags>
+<tag>Reg</tag>
+</tags>
+<status status="PASS" starttime="20201118 14:02:17.839" endtime="20201118 14:04:02.835" critical="yes"></status>
+</test>
+<doc>This will cover the one of purchase of single or multiple products</doc>
+<status status="PASS" starttime="20201118 14:02:17.379" endtime="20201118 14:04:02.838"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Reg</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="OneOffPurchase">OneOffPurchase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
